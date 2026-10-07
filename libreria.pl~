@@ -48,8 +48,3 @@ libros_rango_precio(Titulo,Precio,Min,Max) :-
 libros_por_genero(Titulo,Genero) :-
     libro(Titulo,_),
     genero(Titulo,Genero).
-
-libro_mas_caro(Titulo1,Titulo2) :-
-    precio(Titulo1,Precio1),
-    precio(Titulo2,Precio2),
-    Precio1 > Precio2.
